@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Edit CPU</h2>
+<form method="post" th:object="${category}" th:action="@{/categories/edit}">
+  <input type="hidden" th:field="*{id}">
+  <input type="text" th:field="${category.name}">
+  <button type="submit">Update</button>
+</form>
+</body>
+</html>
